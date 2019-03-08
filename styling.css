@@ -1,0 +1,66 @@
+
+
+.centertext {
+    text-align:center;
+    color: #000;
+    font-size: 150%;
+    font-weight: bold;
+    background: white;
+    font-family: "Courier New", Courier, monospace;
+    transition-delay: 4s;
+    transition-duration: 1s;
+    transition: background .4s linear;
+    transition: color .5s linear;
+    animation-name: hoverOver;
+        
+}
+.centertext:hover {
+    background: black;
+    color: white;
+    animation-name: hoverOver;
+    animation-duration: 5s;
+    content: "hio";
+        
+}
+@keyframes hoverOver {
+  0%   {content: "Choose an element" ;}
+  25%  {content: "Choose an element.";}
+  50%  {content: "Choose an element..";}
+  100% {content: "Choose an element...";}
+}
+
+input.Button {
+    cursor: pointer;
+    padding: 0px;
+    background-color: darkseagreen;
+    height: 50px;
+    width: 130px;
+    top: 100px;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:0.6%;
+    margin-bottom:0%
+    text-align: center;
+    color: #fff;
+    font-size: 150%;
+    font-weight: bold;
+
+}
+
+input.Button:hover {
+    color: black;
+    background-color: limegreen;
+    border: 1px solid #fff;
+    font-size: 170%;    
+}
+
+#Water:hover {
+    background-image: url("watergif.gif");
+}
+#Air:hover {
+    background-image: url("airgif.gif");
+}
+#Co2:hover {
+    background-image: url("co2gif2.gif");
+}

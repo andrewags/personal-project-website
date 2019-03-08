@@ -1,0 +1,91 @@
+.centertextblue {
+    text-align:center;
+    color: blue;
+    font-size: 150%;
+    font-weight: bold;  
+     font-family: "Courier New", Courier, monospace;
+}
+.centertextair {
+    text-align:center;
+    color: lightskyblue;
+    font-size: 150%;
+    font-weight: bold;     
+     font-family: "Courier New", Courier, monospace;
+}
+.centertextgray {
+    text-align:center;
+    color: slategray;
+    font-size: 150%;
+    font-weight: bold;     
+     font-family: "Courier New", Courier, monospace;
+}
+
+#bodywater{
+    background-image: url('https://i.gifer.com/7TCM.gif');
+    background-size: cover;
+}
+#bodyair{
+    background-image: url('https://i.giphy.com/media/13bGgH9VnEDsuA/giphy.gif');
+    background-size: cover;
+}
+#bodyco2{
+    background-image: url('https://media.nature.com/w800/magazine-assets/d41586-018-06018-8/d41586-018-06018-8_16057160.gif');
+    background-size: cover;
+}
+
+.box {
+    font-family: "Courier New", Courier, monospace;
+font-size: 25px;
+letter-spacing: 2px;
+word-spacing: 2px;
+color: white;
+font-weight: normal;
+text-decoration: none;
+font-style: normal;
+font-variant: normal;
+text-transform: none;
+	transition: font-size 1.4s linear;
+    transition: background 2.9s ease-in;
+    transition: color .4s linear;
+    background: black
+}
+.box:hover {
+    color: black;
+    background: white;
+    
+    font-size: 25.5px;
+}
+
+.box, .world {width: 300; height: 300}
+
+.box:hover ~ .world {width: 500; height: 500}
+
+
+
+
+
+.box:on{
+    background: red;
+}
+
+.back {
+    font-weight: bold;
+    color:black;
+    padding: 10px 24px;
+    border-radius: 12px;
+    border: 2px solid black; /* Green */
+    font-family: "Courier New", Courier, monospace;
+    font-size: 11px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    
+    -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+.back:hover {
+    color:white;
+    background:black;
+    border: 2px solid white; /* Green */
+    font-size: 14px;
+}

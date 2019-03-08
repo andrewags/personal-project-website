@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<link rel = "stylesheet" type = "text/css" href = "elementstyles.css" />
+<title>Air!</title>
+</head>
+<body id="bodyair" onload="LoadDate()">
+    <button class="back" onclick="goBack()">Go Back</button>
+	<p id="DateText" class='centertextair'> Sunday, December 2, 2018<br>Air</p>
+    <p class='box'>Air is the Earth's atmosphere. Air around us is a mixture of many gases and dust particles. It is the clear gas in which living things live and breathe. It has an indefinite shape and volume. It has no colour or smell. It has mass and weight, because it is matter. The weight of air creates atmospheric pressure. There is no air in outer space. Air is a mixture of about 78% nitrogen, 21% oxygen, 0.9% argon, 0.04% carbon dioxide, and very small amounts of other gases. There is an average of about 1% water vapour. </p>
+    <img src="https://i.imgur.com/xVuZbHh.png"/>
+</body>
+</html>
+
+<script> 
+var today = new Date();
+var dd = today.getDate();
+var mm = today.getMonth()+1; //January is 0!
+var yyyy = today.getFullYear();
+if(dd<10) {
+    dd = '0'+dd
+} 
+
+if(mm<10) {
+    mm = '0'+mm
+} 
+today = mm + '/' + dd + '/' + yyyy;
+    
+function LoadDate() {
+    document.getElementById("DateText").innerHTML = today;
+}
+    
+  function goBack() {
+  window.history.back();
+}   
+     
+</script>
