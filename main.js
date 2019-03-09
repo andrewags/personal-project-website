@@ -26,7 +26,7 @@ canvas.addEventListener('mousemove', function (event) {
                     
                         
 function start() {
-	console.log("Hi!")
+	console.log("Hi, you found a secret message!")
 }
 
 

@@ -1,27 +1,39 @@
 
-
+.background {
+    background-color: #3D9970;
+}
 .centertext {
     text-align:center;
-    color: #000;
+    color: #001f3f;
     font-size: 150%;
     font-weight: bold;
     background: white;
     font-family: "Courier New", Courier, monospace;
     transition-delay: 4s;
     transition-duration: 1s;
-    transition: background .4s linear;
     transition: color .5s linear;
     animation-name: hoverOver;
         
 }
 .centertext:hover {
-    background: black;
+    background: #FF851B;
     color: white;
     animation-name: hoverOver;
     animation-duration: 5s;
     content: "hio";
         
 }
+
+.smalltext {
+    text-align:center;
+    color: #001f3f;
+    font-size: 100%;
+    font-weight: normal;
+    font-style: oblique;
+    font-family: "Courier New", Courier, monospace;
+        
+}
+
 @keyframes hoverOver {
   0%   {content: "Choose an element" ;}
   25%  {content: "Choose an element.";}
@@ -40,8 +52,8 @@ input.Button {
     margin-left:auto;
     margin-right:auto;
     margin-top:0.6%;
-    margin-bottom:0%
-    text-align: center;
+    margin-bottom:0%;
+    text-align:center;
     color: #fff;
     font-size: 150%;
     font-weight: bold;
@@ -63,4 +75,36 @@ input.Button:hover {
 }
 #Co2:hover {
     background-image: url("co2gif2.gif");
+}
+
+
+.ButtonNew {
+    font-weight: bold;
+    color:black;
+    padding: 20px 44px;
+    border-radius: 12px;
+    border: 2px solid black; /* Green */
+    font-family: "Courier New", Courier, monospace;
+    font-size: 20px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    margin-left:auto;
+    margin-right:auto;
+    display:block;
+    margin-top:1%;
+    margin-bottom:0%;
+    -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s ease-in-out;
+  transition: color 0s 2s, opacity 2s linear;
+}
+
+.ButtonNew:hover {
+    color:white;
+ 
+    border: 2px solid white; /* Green */
+    font-size: 25px;
+}
+
+.ButtonNew:active {
+    color:green;
 }
